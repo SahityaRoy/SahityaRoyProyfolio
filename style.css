@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------Navbar---------- */
+
+.brand-logo{
+    
+
+  
+  font-family: 'Lobster', cursive;
+}
+.navbar-fixed {
+    position: relative;
+    height: 70px;
+    z-index: 997;
+}
+nav .nav-wrapper {
+    position: sticky;
+    height: 100%;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+div {
+    display: block;
+}
+nav {
+    color: #fff;
+    background-color: #041f96;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+}
+nav ul li {
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    float: left;
+    padding: 0;
+}
+nav ul a {
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    font-size: 1.3rem;
+    color: #fff;
+    display: block;
+    padding: 0 15px;
+    cursor: pointer;
+}
+nav .sidenav-trigger i {
+    height: 70px;
+    line-height: 70px;
+}
+
+/*------------ home ----------- */
+.home h3{
+  font-size: 55px;
+}
+.home h4{
+  font-size: 35px;
+}
+
+.home{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+    animation: animate 5s ease-in-out infinite;
+    position: relative;
+    background: linear-gradient( #1b08b3, #1f05a7, #22039b, #23028f, #230184, #2d0185, #350185, #3c0286, #4e0492, #60069e, #7208aa, #840bb6);
+    overflow: hidden;
+    z-index: 6;
+   
+  }
+.wave{
+  z-index: 101;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave1.png);
+    background-size: 1000px 100px;
+    animation: animate 5s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 25s);
+}
+  
+  .home.wave.wave-1{
+    position: absolute;
+    z-index: 5;
+    height: 70px;
+    animation: animate 30s linear infinite;
+    opacity: 1;
+    animation-delay: 0s;
+  }
+.home .wave-3{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 70px;
+    animation: animate3 30s linear infinite;
+    opacity: 0.7;
+    animation-delay: -2s;
+} 
+.home .wave-4{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 70px;
+    animation: animate4 5s linear infinite;
+    opacity: 0.5;
+    animation-delay: -5s;
+  }
+  
+@keyframes animate {
+    0%{
+      background-position-x:0 ;
+    }
+    100%{
+      background-position-x:1000px ;
+    }
+}
+@keyframes animate2 {
+    0%{
+      background-position-x:0 ;
+    }
+    100%{
+      background-position-x:-1000px ;
+    }
+}
+@keyframes animate4 {
+    0%{
+      background-position-x:0 ;
+    }
+    100%{
+      background-position-x:-1000px ;
+    }
+}
+
+#pic{
+  transform: translateY(0px);
+  animation: float 6s ease-in-out infinite;
+ 
+}
+@keyframes float {
+  0%{
+     transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-20px);
+ }
+ 100%{
+  transform: translateY(0px);
+} 
+}
+#bigbann{
+   padding: 7%;
+   z-index: 100;
+    
+}
+
+.button{
+  color: white;
+  font-size: 17px;
+  background: rgb(231, 22, 151);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+ 
+}
+
+
+
+
+/* -----About Us------- */
+
+
+.sec{
+    padding: 100px;
+}
+.sec h2{
+    font-size: 3em;
+    color: #111;
+}
+.sec h2{
+    font-size: 1.2em;
+    color: #111;
+}
+
+
+/*---------- parallex------------------ */
+.parallax-container{
+  min-height: 310px;
+  height: auto;
+  clip-path: polygon(55% 0, 100% 0, 100% 35%, 100% 97%, 68% 85%, 0 100%, 0 76%, 0% 35%, 0 0);
+}
+
+
+/*------------- services-------------- */
+
+#service{
+  font-size: 1.5vw;
+  margin: 10px 0px;
+  line-height: 50px;
+ 
+}
+#i{
+  line-height: 50px;
+  color:#ee154b ;
+  transition: 0.5s ease;
+  padding: 0px 10px;
+  border-radius: 50% ;
+  border: 2px solid #ee154b;
+}
+#i:hover{
+  color:white;
+  background-color:#ee154b ;
+}
+
+
+
+/*----------- contact Us ---------------*/
+
+.Contact ul{
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+
+}
+.Contact ul li{
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  margin:0px 30px ;
+
+  transform: rotate(-30deg) skew(25deg);
+ 
+}
+.Contact ul li span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transition: 0.5s;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px !important;
+}
+.Contact ul li:hover span:nth-child(4){
+  transform: translate(40px,-40px);
+  opacity: 1;
+}
+.Contact ul li:hover span:nth-child(3){
+  transform: translate(30px,-30px);
+  opacity: 0.8;
+}
+.Contact ul li:hover span:nth-child(2){
+  transform: translate(20px,-20px);
+  opacity:0.6 ;
+}
+.Contact ul li:hover span:nth-child(1){
+  transform: translate(10px,-10px);
+  opacity: 0.4;
+}
+.Contact ul li:nth-child(1) span{
+  background: #3b5999;
+}
+.Contact ul li:nth-child(2) span{
+  background: #111111;
+}
+.Contact ul li:nth-child(3) span{
+  background: linear-gradient(#0e1cff, #b300cd, #e5009a, #f8006d, #f90049, #fc2f37, #fc4a23, #ff8500, #ffa700, #ffc703, #ffe630);
+}
+.Contact ul li:nth-child(4) span{
+  background: #09b306;
+}
+
+.cont{
+  
+  margin: 10px 0px;
+  line-height: 50px;
+  text-align: center;
+}
+#icon{
+  padding: 0px 15px;
+  color: #041f96;
+  border-radius: 50%;
+  border: 2px solid #041f96;
+  line-height: 50px;
+  transition: 0.5s ease;
+  font-size: 25px;
+}
+#icon:hover{
+  color:#041f96 ;
+  background-color: white;
+}
+.cont p{
+  text-align: center;
+  font-size: 20px;
+  line-height: 50px;
+  
+}
+
+
+/*--------- footer---------------- */
+.page-footer {
+  padding-top: 50px;
+  color: #fff;
+  background-color: #0826ac;
+ 
+}
+
+/* --------------- responsive --------------- */
+@media only screen and (max-width:992px) {
+  .home h3{
+    font-size: 45px;
+  }
+  .home h4{
+    font-size: 25px;
+  }
+  #bigbann{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .services #h3{
+    text-align: center;
+  }
+  .services{
+    text-align: center;
+  }
+  #service{
+    font-size: 2em;
+    margin: 10px 5px;
+    text-align: center;
+  }
+  .brand-logo{
+    margin-left: 0;
+  }
+ 
+}
+
+@media only screen and (max-width: 600px) {
+  .home h3{
+    font-size: 35px;
+  }
+  .home h4{
+    font-size: 20px;
+  }
+  .brand-logo{
+    margin-left: 0;
+  }
+  #bigbann{
+     text-align: center;
+     margin-top: 0px;
+     align-content: center;
+  }
+  #pic{
+   padding-bottom: 0;
+  }
+  .parallax-container{
+    min-height: 190px;
+    height: auto;
+  }
+  .services #h3{
+    text-align: center;
+  }
+  .services{
+    text-align: center;
+  }
+  #service{
+    font-size: 2em;
+    margin: 10px 5px;
+    text-align: center;
+  }
+
+  .Contact ul li{
+    position: relative;
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    margin:0 20px;
+    transform: rotate(-30deg) skew(25deg);
+  }
+  .Contact ul li span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transition: 0.5s;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .brand-logo{
+    margin-left: 0;
+  }
+  .services #h3{
+    text-align: center;
+   
+    
+  }
+  .services{
+    text-align: center;
+  
+   }
+  .Contact ul li{
+  position: relative;
+  list-style: none;
+  width: 15px;
+  height: 15px;
+  margin:0 8px;
+  transform: rotate(-30deg) skew(25deg);
+ }
+ .Contact ul li span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transition: 0.5s;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px !important;
+  }
+}
